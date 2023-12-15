@@ -1,19 +1,25 @@
 #coolButton{
+/*Setting all transitions to 1s*/
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   transition: all 1s ease-out;
+/*Settings Font-family*/
   font-family: 'Ubuntu', sans-serif;
 }
+
 #coolButton:hover{
-  transition: 1s linear;
   background-color: #6058EB;
+  
+/*  Making the glow effect*/
   filter: drop-shadow(0 0 10px #6058EB) drop-shadow(0 0 40px #6058EB)
   contrast(1.8) brightness(1.8);
 }
 
 .coolBG{
+
+/* Adding Custom background-image and black overlay on it*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url("../res/bg.jpg");
   background-size: cover;
   background-repeat: none;
